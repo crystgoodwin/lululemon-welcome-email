@@ -86,6 +86,16 @@
             text-align: center !important;
             padding: 0;
          }
+
+         .image-desktop {
+            display: none !important;
+            max-width: 600px !important;
+         }
+
+         .image-mobile {
+            display: block !important;
+            max-width: 480px !important;
+         }
       }
 
       @media screen and (max-width: 399.98px) {
@@ -95,27 +105,6 @@
          }
 
 
-      }
-
-      /* Custom Dark Mode Colors */
-      :root {
-         color-scheme: light dark;
-         supported-color-schemes: light dark;
-      }
-
-      @media (prefers-color-scheme: dark) {
-
-         body,
-         center,
-         table,
-         .darkmode-bg {
-            background: #2d2d2d !important;
-            color: #ffffff !important;
-         }
-
-         .darkmode-transparent {
-            background-color: transparent !important;
-         }
       }
    </style>
 
@@ -312,7 +301,7 @@
 
                                  <td align="center" style="border-radius:none;" bgcolor="#ffffff">
                                     <a href="https://example.com" target="_blank"
-                                       style="font-size: 13px;font-weight: 700;text-decoration: none;color: #000;background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px;display: inline-block;">SHOP
+                                       style="font-size: 12px;font-weight: 700;text-decoration: none;color: #000;background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px;display: inline-block;">SHOP
                                        WOMEN'S NEW ARRIVALS
                                     </a>
                                  </td>
@@ -327,7 +316,7 @@
 
                                  <td align="center" style="border-radius:none;" bgcolor="#ffffff">
                                     <a href="https://example.com" target="_blank"
-                                       style="font-size: 13px;font-weight: 700;text-decoration: none;color: #000;background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px;display: inline-block;">SHOP
+                                       style="font-size: 12px;font-weight: 700;text-decoration: none;color: #000;background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px;display: inline-block;">SHOP
                                        WOMEN'S NEW ARRIVALS
                                     </a>
                                  </td>
@@ -453,7 +442,7 @@
                                     <td align="center" style="border-radius:none;" bgcolor="#ffffff">
                                        <a href="https://example.com" target="_blank"
                                           style="font-size: 13px;font-weight: 700;text-decoration: none;color: #000;background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px;display: inline-block;">SHOP
-                                          ALL WHAT'S NEW
+                                          ALL "WHAT'S NEW"
                                        </a>
                                     </td>
                                  </tr>
@@ -465,6 +454,139 @@
                </td>
             </tr>
             <!-- END THREE COLUMN SECTION -->
+
+            <!-- START SINGLE IMAGE SECTION -->
+            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%;">
+               <tr>
+                  <td>
+                     <table cellspacing="0" cellpadding="0" border="0"
+                        style="border-collapse:collapse; border-spacing:0; Margin:0 auto; width:100%; max-width:620px;"
+                        bgcolor="#f7f7f7">
+                        <tr style="display:block;">
+                           <td align="center"
+                              style="display:inline-block;padding-top:0px;padding-bottom:15px;padding-right:15px;padding-left:15px;">
+
+                              <a href="https://example.com" style="text-decoration: none">
+                                 <img alt="membership image" class="image-desktop"
+                                    src="images/weve-got-you-covered-image.jpg"
+                                    style="border-width:0;width:100%;max-width:620px;height:auto;" width="590">
+                                 <!--[if !mso]><\!-->
+                                 <img alt="membership image" class="image-mobile"
+                                    src="images/weve-got-you-covered--mobile-image.jpg"
+                                    style="border-width:0;width:100%;max-width:620px;height:auto;text-align:center;display: none;"
+                                    width="100%">
+                                 <!-- <![endif]-->
+                              </a>
+
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+            <!-- END IMAGE SECTION SECTION -->
+
+            <!-- START MEMBERSHIP TEXT & BUTTON SECTION -->
+            <tr>
+               <td style="padding-top:0;padding-right:0;padding-bottom:50px;padding-left:0;background-color:#f7f7f7;">
+                  <table width="100%" style="border-spacing:0; " role="presentation">
+                     <tbody>
+                        <tr>
+                           <td
+                              style="padding-top:22px;padding-bottom:50px;padding-right:20px;padding-left:20px;width:100%;text-align:center;font-family:'DM Sans', Helvetica, sans-serif;font-size:20px;background-color:#f7f7f7;">
+                              <p style="font-size:24px; font-weight:700;padding-bottom:5px;">
+                                 Membership is here.</p>
+
+                              <p style="font-size:18px;padding-right:15px;padding-left:15px;line-height:24px;">Join—for
+                                 free—to get early access to product drops, even easier returns, select lululemon Studio
+                                 content, and more.*.</p>
+                              <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                 <tr>
+
+                                    <td align="center" style="border-radius:none;" bgcolor="#ffffff">
+                                       <tbody>
+                                          <tr>
+                                             <td align="center" style="padding-top:10px;">
+                                                <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td align="center">
+                                                            <a href="https://example.com" target="_blank"
+                                                               style="font-size: 12px;font-weight: 700;text-decoration: none;color: #000;background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px;display: inline-block;">EXPERIENCE
+                                                               MEMBERSHIP
+                                                            </a>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td align="center" style="padding-top: 5px;">
+
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <!-- END MEMBERSHIP TEXT & BUTTON SECTION -->
+
+            <!-- START BANNER IMAGE -->
+            <tr>
+               <td class="banner" width="600">
+                  <table cellpadding="0" cellspacing="0" role="presentation">
+                     <tbody>
+                        <tr>
+                           <td width="600" align="center" valign="middle">
+                              <table cellpadding="0" cellspacing="0" role="presentation">
+                                 <tbody>
+                                    <tr>
+                                       <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                                          <img src="images/membership-details.jpg" width="600"
+                                             style="border-width:0;width:100%;max-width:600px;height:auto;display:block;"
+                                             alt="">
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <!-- END BANNER IMAGE -->
+
+            <!-- START SOCIAL ICONS -->
+            <tr>
+               <td style="padding:0;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+                     <tbody>
+                        <tr>
+                           <td class="padding content"
+                              style="background-color:#f7f7f7;color:#222222;font-size:16px;padding-top:10px;padding-right:20px;padding-bottom:20px;padding-left:20px;width:100%;text-align:center;width:600px;">
+                              <a href="https://example.com"><img src="images/tictok-icon.png" alt="tiktok icon"
+                                    width="30" style="border-width:0;"></a>
+                              <a href="https://example.com"><img src="images/instagram-icon.png" alt="instagram icon"
+                                    width="30" style="border-width:0;"></a>
+                              <a href="https://example.com"><img src="images/facebook-icon.png" alt="facebook icon"
+                                    width="30" style="border-width:0;"></a>
+                              <a href="https://example.com"><img src="images/youtube-icon.png" alt="youtube icon"
+                                    width="30" style="border-width:0;"></a>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <!-- END SOCIAL ICONS-->
 
          </table>
 
