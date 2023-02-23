@@ -7,6 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
       /* CLIENT-SPECIFIC STYLES */
       body,
       table,
@@ -90,7 +92,7 @@
          line-height: inherit;
       }
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 599.98px) {
          .responsive-table {
             width: 100% !important;
          }
@@ -98,6 +100,16 @@
          .mobile-copy {
             font-size: 18px !important;
             line-height: 28px !important;
+         }
+
+         .image-desktop {
+            display: none !important;
+            max-width: 600px !important;
+         }
+
+         .image-mobile {
+            display: block !important;
+            max-width: 480px !important;
          }
       }
    </style>
@@ -234,7 +246,7 @@
 
                <!-- THREE COLUMN MODULE -->
                <tr>
-                  <td style="padding: 0px 0px 0px 0px">
+                  <td style="padding: 0px 0px 0px 0px; background-color:#f7f7f7;">
                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                         <tr>
                            <td>
@@ -310,28 +322,68 @@
                   </td>
                </tr>
 
+               <!-- BUTTON MODULE -->
+               <tr>
+                  <td align="center" style="padding: 30px 10px 40px 10px; background-color:#f7f7f7;">
+                     <!-- BORDER-BASED BUTTON -->
+                     <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td>
+                              <a href="#" target="_blank" class="btn"
+                                 style="font-size: 13px; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #000000; text-decoration: none;  background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px; display: inline-block;">SHOP
+                                 ALL WHAT'S NEW</a>
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+
+               <!-- IMAGE MODULE -->
+               <tr>
+                  <td align="center" style="padding: 15px 15px 15px 15px; background-color: #f7f7f7;">
+                     <a href="#"><img src="images/weve-got-you-covered-image.jpg" alt="We've got you"
+                           class="image-desktop" width="590" border="0" style="display: block;
+                        color: #888888; font-family: sans-serif; font-size: 24px; width: 100%; max-width: 620px;">
+                        <img src="images/weve-got-you-covered--mobile-image.jpg" alt="We've got you"
+                           class="image-mobile" width="600" border="0"
+                           style="display: none;
+                     color: #888888; font-family: sans-serif; font-size: 24px; width: 100%; max-width: 100%; min-width:200px;">
+                     </a>
+                  </td>
+               </tr>
+
 
                <!-- HEADING MODULE -->
                <tr>
                   <td align="center"
-                     style="color: #000000; font-family: 'Avenir Next', Helvetica, Arial, sans-serif; font-size: 20px; font-weight:normal;line-height: 24px; padding:20px 10px 0px 10px;">
-                     <h3 style="margin:0;">This is a headline level 3</h3>
+                     style="color: #000000; font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 22px; font-weight:700;line-height: 24px; padding: 40px 20px 20px 20px; background-color: #f7f7f7;">
+                     <h3 style="margin:0;">Membership is here.</h3>
                   </td>
                </tr>
                <tr>
-                  <td align="left"
-                     style="color: #999999; font-family: 'Avenir Next', Helvetica, Arial, sans-serif; font-size: 18px; font-weight:normal;line-height: 28px; padding:20px 10px 0px 10px;">
-                     <p style="margin:0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ea tenetur quas
-                        est recusandae
-                        nam.
-                        Voluptates, tempora aspernatur. Nobis veritatis exercitationem qui quos culpa accusantium
-                        incidunt
-                        numquam, sint itaque velit! Eaque vel dicta dolorem laudantium dolorum officiis quam autem
-                        doloribus, corrupti ullam vero. Reiciendis expedita sunt distinctio necessitatibus deleniti
-                        nobis.</p>
+                  <td align="center"
+                     style="color: #333333; font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight:normal;line-height: 24px; padding:10px 10px 20px 10px;background-color: #f7f7f7;">
+                     <p style="margin:0;">Join—for
+                        free—to get early access to product drops, even easier returns, select lululemon Studio
+                        content, and more.*</p>
                   </td>
                </tr>
 
+               <!-- BUTTON MODULE -->
+               <tr>
+                  <td align="center" style="padding: 10px 10px 60px 10px; background-color:#f7f7f7;">
+                     <!-- BORDER-BASED BUTTON -->
+                     <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td>
+                              <a href="#" target="_blank" class="btn"
+                                 style="font-size: 12px; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #000000; text-decoration: none;  background-color: #ffffff;border:1px solid #000;letter-spacing:2px;padding:11px 20px; display: inline-block;">EXPERIENCE
+                                 MEMBERSHIP</a>
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
                <!-- FOOTER MODULE -->
                <!-- UNSUBSCRIBE MODULE -->
                <tr>
