@@ -55,8 +55,8 @@
       }
 
       a:hover {
-         text-decoration: underline;
-         color: #ff6961;
+         text-decoration: underline !important;
+         color: #c40202 !important;
       }
 
       .btn {
@@ -64,12 +64,14 @@
       }
 
       .btn:hover {
-         background-color: gold !important;
-         border-top: 20px solid gold !important;
-         border-right: 40px solid gold !important;
-         border-bottom: 20px solid gold !important;
-         border-left: 40px solid gold !important;
-         color: black !important;
+         background-color: #c40202 !important;
+         color: #ffffff !important;
+         text-decoration: none !important;
+      }
+
+      .content {
+         line-height: 20px;
+         font-size: 15px;
       }
 
       /* iOS BLUE LINKS */
@@ -111,6 +113,11 @@
             display: block !important;
             max-width: 480px !important;
          }
+
+         .header {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+         }
       }
    </style>
 </head>
@@ -127,7 +134,7 @@
       <tr>
          <td style="padding:0px;">
             <table align="center" border="0" cellspacing="0" role="presentation" width="600" class="responsive-table">
-
+               <!--[if (gte mso 9)|(IE)]>       <table style="width:600px;" align="center" cellpadding="0" cellspacing="0" border="0">         <tr>           <![endif]-->
                <!-- HEADING MODULE -->
                <tr>
                   <td align="right"
@@ -135,53 +142,64 @@
                      <p style="margin:0;">Enjoy free shipping and returns</p>
                   </td>
                </tr>
+               <!--[if (gte mso 9)|(IE)]>         </table>       </tr>       <![endif]-->
 
-               <!-- TWO COLUMN MODULE -->
+               <!-- TWO COLUMN HEADER MODULE  -->
                <tr>
-                  <td style="padding: 10px 0px 10px 0px">
-                     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <td class="col-one header" style="padding-left: 30px; padding-right: 30px;" align="center">
+                     <!--[if true]>       <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">         <tr>           <td align="center" width="100%">             <![endif]-->
+                     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="margin: 0 auto; max-width: 600px; width: 100%;">
                         <tr>
-                           <td>
-                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                 width="45%" class="responsive-table">
+                           <td width="20" height="20"
+                              style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top">
+                              <table border="0" cellpadding="5" cellspacing="0" width="100%">
                                  <tr>
-                                    <td>
-                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
-                                          role="presentation" width="100%">
-                                          <!-- IMAGE MODULE -->
-                                          <tr>
-                                             <td align="left" style="padding: 0px 0px 0px 20px;">
-                                                <a href="#">
-                                                   <img src="images/lululemon-logo.png" alt="lululemon logo" width="50"
-                                                      border="0"
-                                                      style="display: block; color: #000000; font-family: sans-serif; font-size: 32px; font-weight:bold;max-width:100%;min-width:50px;">
-                                                </a>
-                                             </td>
-                                          </tr>
+                                    <td align="left" valign="top">
 
-                                       </table>
+                                       <a href="https://example.com">
+                                          <img alt="lululemon logo" border="0" height="50"
+                                             src="images/lululemon-logo.png"
+                                             style="font-family: 'DM Sans', helvetica, arial, sans-serif; color: #000000; font-size: 14px; text-decoration: none; text-align:center;"
+                                             width="50">
+                                       </a>
+
                                     </td>
-                                 </tr>
-                              </table>
-                              <table align="right" border="0" cellspacing="0" role="presentation" width="45%"
-                                 class="responsive-table">
-                                 <tr>
-                                    <td>
-                                       <table align="right" border="0" cellspacing="0" role="presentation" width="100%">
-                                          <!-- HEADING MODULE -->
-                                          <tr>
-                                             <td
-                                                style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px;padding:10px 20px 0px 0px;text-align: right;">
-                                                <p style="margin:0;">SHOP WOMEN | SHOP MEN</p>
-                                             </td>
-                                          </tr>
-                                       </table>
+                                    <td align="right"
+                                       style="width:150px;padding-right:12px;text-align:right;white-space:nowrap !important;">
+
+                                       <a class="nav-header" href="https://example.com"
+                                          style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 13px; letter-spacing: 1px; text-decoration:none;font-weight: normal;color:#000000; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;-webkit-text-size-adjust:none; text-size-adjust:none;">
+                                          <span style="color:#000000;">SHOP&nbsp;WOMEN</span>
+                                       </a>
+
+                                    </td>
+                                    <td align="center" class="nav-header"
+                                       style="font-family: 'Lato', helvetica, arial, sans-serif; font-size:13px;letter-spacing:1em;font-weight: bold;text-decoration:none;color:#dfdfdf !important;width:20px; text-align:center;-webkit-text-size-adjust:none; text-size-adjust:none;">
+                                       <span style="color:#000000;">|</span>
+                                    </td>
+                                    <td align="right" class="nav-mens"
+                                       style="width:1%;white-space:nowrap !important; text-align:right;">
+
+                                       <a class="nav-header" href="https://examples.com"
+                                          style="font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 13px; letter-spacing: 1px; font-weight: normal;text-decoration:none;color:#000000; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;-webkit-text-size-adjust:none; text-size-adjust:none;">
+                                          <span style="color:#000000;">SHOP&nbsp;MEN</span>
+                                       </a>
+
                                     </td>
                                  </tr>
                               </table>
                            </td>
                         </tr>
+                        <tr>
+                           <td width="20" height="20"
+                              style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                        </tr>
                      </table>
+                     <!--[if true]>             </td>           </tr>         </table>         <![endif]-->
                   </td>
                </tr>
 
@@ -384,38 +402,181 @@
                      </table>
                   </td>
                </tr>
-               <!-- FOOTER MODULE -->
-               <!-- UNSUBSCRIBE MODULE -->
+
+               <!-- BANNER IMAGE MODULE -->
                <tr>
-                  <td align="center"
-                     style="color: #999999; font-family: 'Avenir Next', Helvetica, Arial, sans-serif; font-size: 14px; font-weight:normal;line-height: 18px; padding:20px 10px 0px 10px;">
-                     <p style="margin:0;">You're getting this email because you're awesome. <a href="#">Unsubscribe
-                           here</a> if you don't
-                        want emails anymore.</p>
-                  </td>
-               </tr>
-               <!-- VIEW IN BROWSER MODULE -->
-               <tr>
-                  <td align="center"
-                     style="color: #999999; font-family: 'Avenir Next', Helvetica, Arial, sans-serif; font-size: 14px; font-weight:normal;line-height: 18px; padding:20px 10px 0px 10px;">
-                     <a href="#">View this in your browser</a>
+                  <td align="center" style="padding: 0px 0px 0px 0px;">
+                     <a href="https://example.com" target="_blank"><img src="images/membership-details.jpg"
+                           alt="Discover lululemon Membership" width="600" border="0"
+                           style="display: block;
+                     color: #888888; font-family: sans-serif; font-size: 24px; width: 100%; max-width: 100%; min-width:200px;"></a>
                   </td>
                </tr>
 
-               <!-- ADDRESS MODULE -->
+               <!-- FOOTER MODULE -->
+
+               <!-- SOCIALS MODULE -->
                <tr>
                   <td align="center"
-                     style="color: #999999; font-family: 'Avenir Next', Helvetica, Arial, sans-serif; font-size: 14px; font-weight:normal;line-height: 18px; padding:20px 10px 0px 10px;">
-                     <address style="font-style:normal;">
-                        Acme, Inc.<br>
-                        1234 Main Street<br>
-                        Anytown, MA 00112
-                     </address>
+                     style="color: #333333; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; font-weight:normal;line-height: 18px; padding:40px 10px 40px 10px;background-color: #f7f7f7;">
+                     <a href="#"
+                        style="text-decoration:none;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:50; vertical-align: middle;"><img
+                           src="images/tictok-icon.png" alt="tiktok icon" width="30"
+                           style="border-width:0; border:0; outline:0; color:#57585B; width:30px; min-width:20px; padding: 0px 20px 0px 20px;"
+                           title="Tiktok" width="30"></a>
+                     <a href="#"
+                        style="text-decoration:none;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:50; vertical-align: middle;"><img
+                           src="images/instagram-icon.png" alt="instagram icon" width="30"
+                           style="border-width:0; border:0; outline:0; color:#57585B; width:30px; min-width:20px; padding: 0px 20px 0px 20px;"
+                           title="Instagram" width="30"></a>
+                     <a href="#"
+                        style="text-decoration:none;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:50; vertical-align: middle;"><img
+                           src="images/facebook-icon.png" alt="facebook icon" width="30"
+                           style="border-width:0; border:0; outline:0; color:#57585B; width:30px; min-width:20px; padding: 0px 20px 0px 20px;"
+                           title="Facebook" width="30"></a>
+                     <a href="#"
+                        style="text-decoration:none;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:50; vertical-align: middle;"><img
+                           src="images/youtube-icon.png" alt="youtube icon" width="30"
+                           style="border-width:0; border:0; outline:0; color:#57585B; width:30px; min-width:20px; padding: 0px 20px 0px 20px;"
+                           title="YouTube" width="30"></a>
                   </td>
                </tr>
-            </table>
+
+               <!-- START APP DOWNLOAD SECTION-->
+               <tr>
+                  <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;background-color: #f7f7f7;">
+                     <table width="100%" style="border-spacing:0;" role="presentation">
+                        <tbody>
+                           <tr>
+                              <td
+                                 style="padding-top:20px;padding-right:20px;padding-bottom:50px;padding-left:20px;width:100%;text-align:center;font-family:'DM Sans', Helvetica, sans-serif;font-size:20px;background-color:#f7f7f7;">
+                                 <p style="font-size:12px;padding-bottom:10px;font-weight:bold;color:#57585B">Download
+                                    the
+                                    lululemon App
+                                 </p>
+                                 <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                    <tbody>
+                                       <tr>
+                                          <td align="center">
+                                             <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                                <tbody>
+                                                   <tr>
+                                                      <td align="center">
+                                                         <a href="https://example.com"
+                                                            style="text-decoration:none;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:50; vertical-align: middle; display: block;"><img
+                                                               src="images/apple-app-store-button.png"
+                                                               style="display:block; border:0;outline:0;width:120px;min-width:120px;"
+                                                               alt="" width="120"></a>
+                                                      </td>
+                                                      <td align="center" width="18">
+                                                      </td>
+                                                      <td align="center">
+                                                         <a href="https://example.com"
+                                                            style="text-decoration:none;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;width:50; vertical-align: middle; display: block;"><img
+                                                               src="images/google-play-button.png"
+                                                               style="display:block; border:0;outline:0;width:120px;min-width:120px;"
+                                                               alt="" width="120"></a>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </td>
+               </tr>
+               <!-- END APP DOWNLOAD SECTION-->
+
+               <!-- START FOOTER -->
+               <tr>
+                  <td style="background-color:#f7f7f7;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;">
+                     <table width="100%" style="border-spacing:0;" role="presentation">
+                        <tr>
+                           <td class="padding content"
+                              style="font-size:13px;padding-top:0px;padding-right:20px;padding-bottom:10px;padding-left:20px;width:100%;text-align:center; width:300px;background-color: #f7f7f7;font-family:'DM Sans', Helvetica, sans-serif;font-size:10px;"
+                              width="300">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                 style="margin:0 auto; max-width:285px;width:100%;">
+                                 <tr>
+                                    <td align="center" valign="middle">
+                                       This <img src="images/american-flag-icon.png"> version of the email was sent to
+                                       <a href="mailto:email@example.com"
+                                          style="color:#57585b;font-family:'DM Sans', Helvetica, sans-serif;font-size:10px;text-align:center;"><strong>email@example.com</strong></a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="padding content"
+                                       style="font-size:13px;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px;width:100%;text-align:center; width:600px;background-color: #f7f7f7;font-family:'DM Sans', Helvetica, sans-serif;font-size:10px;">
+                                       <a href="https://example.com" style="font-size:11px;font-weight:700;">Contact
+                                          us</a> &nbsp; | &nbsp; <a href="https://example.com"
+                                          style="font-size:11px;font-weight:700;">Privacy </a>&nbsp;| &nbsp;<a
+                                          href="https://example.com" style="font-size:11px;font-weight:700;">Terms of
+                                          Use</a>
+                                       &nbsp;|&nbsp; <a href="https://example.com"
+                                          style="font-size:11px;font-weight:700;">
+                                          Careers</a> &nbsp;| &nbsp;<a href="https://example.com"
+                                          style="font-size:11px;font-weight:700;">Manage
+                                          Preferences</a>&nbsp; | &nbsp;<a href="https://example.com"
+                                          style="font-size:11px;font-weight:700;">Unsubscribe
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="middle" style="padding-top:20px;padding-bottom:0;">
+                                       <a href="https://example.com" style="font-size:10px;">© 2023 LULULEMON
+                                          ATHLETICA</a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="middle" style="padding-top:0;">
+                                       <a href="https://example.com" style="font-size:10px;">1818 CORNWALL AVENUE,
+                                          VANCOUVER BC, V6J 1C7</a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="middle" style="padding-top:20px;">
+                                       <p style="font-size:9px;line-height:13px;">*For lululemon Membership program
+                                          members, program
+                                          criteria,
+                                          eligibility and benefits are subject to availability and change. Benefits
+                                          are only for members and conditions and exclusions apply. See the full
+                                          lululemon Membership <a href="https://example.com"
+                                             style="font-size:9px;font-weight:bold;">Terms
+                                             and Conditions</a>.</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+
+                        </tr>
+
+
+                     </table>
+                  </td>
+               </tr>
+               <!-- END FOOTER -->
+
+               <!-- ATTRIBUTION MODULE -->
+               <tr>
+                  <td style="padding-top:30px;padding-right:0;padding-bottom:5px;padding-left:0;">
+               <tr>
+                  <td class="padding content"
+                     style="padding-top:15px;padding-right:20px;padding-bottom:10px;padding-left:20px;width:100%;text-align:center;font-size:12px;font-family: 'DM Sans', Helvetica, Arial, sans-serif;">
+                     <p>Coded by <a href="https://crystgoodwin.github.io/"
+                           style="font-size:12px;color:#222222; text-decoration:underline;">Crystal G.</a></p>
+                  </td>
+               </tr>
          </td>
       </tr>
+
+   </table>
+   </td>
+   </tr>
 
    </table>
 
